@@ -1,0 +1,174 @@
+<head>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
+<link href='style.css' rel='stylesheet' type='text/css'>
+<title>mope.io Test</title>
+<link rel="icon" type="x-icon" href="icon.png">
+<link rel="shortcut icon" type="x-icon" href="icon.png">
+<meta charset="utf-8">
+<script>
+  version = "mope test 1" //Remember to update this before making changes to the test itself!
+</script>
+</head>
+<script type="application/javascript"
+        src="animals.js">
+</script>
+
+<body>
+<h1>mope.io Animals Test</h1>
+
+
+<h1>Results</h1>
+
+<h2>Versatility Axis: <span class="weight-300" id="versatility-label"></span></h2>
+<div class="axis">
+    <img id="img-versatile" src="value_images/versatile.png" height="128pt"/>
+    <div class="bar versatile" id="bar-versatile"><div class="text-wrapper" id="versatile"></div></div>
+    <div class="bar specialized" id="bar-specialized"><div class="text-wrapper" id="specialized"></div></div>
+    <img id="img-specialized" src="value_images/specialized.png" height="128pt"/>
+</div>
+<h2>Diet Axis: <span class="weight-300" id="diet-label"></span></h2>
+<div class="axis">
+    <img id="img-herbivore" src="value_images/herbivore.png" height="128pt"/>
+    <div class="bar herbivore" id="bar-herbivore"><div class="text-wrapper" id="herbivore"></div></div>
+    <div class="bar carnivore" id="bar-carnivore"><div class="text-wrapper" id="carnivore"></div></div>
+    <img id="img-carnivore" src="value_images/carnivore.png" height="128pt"/>
+</div>
+<h2>Sociality Axis: <span class="weight-300" id="sociality-label"></span></h2>
+<div class="axis">
+    <img id="img-social" src="value_images/social.png" height="128pt"/>
+    <div class="bar social" id="bar-social"><div class="text-wrapper" id="social"></div></div>
+    <div class="bar solitary" id="bar-solitary"><div class="text-wrapper" id="solitary"></div></div>
+    <img id="img-solitary" src="value_images/solitary.png" height="128pt"/>
+</div>
+<h2>Trophic Axis: <span class="weight-300" id="trophic-label"></span></h2>
+<div class="axis">
+    <img id="img-prey" src="value_images/prey.png" height="128pt"/>
+    <div class="bar prey" id="bar-prey"><div class="text-wrapper" id="prey"></div></div>
+    <div class="bar predator" id="bar-predator"><div class="text-wrapper" id="predator"></div></div>
+    <img id="img-predator" src="value_images/predator.png" height="128pt"/>
+</div>
+<h2>Temperature Axis: <span class="weight-300" id="temperature-label"></span></h2>
+<div class="axis">
+    <img id="img-cold" src="value_images/cold.png" height="128pt"/>
+    <div class="bar cold" id="bar-cold"><div class="text-wrapper" id="cold"></div></div>
+    <div class="bar hot" id="bar-hot"><div class="text-wrapper" id="hot"></div></div>
+    <img id="img-hot" src="value_images/hot.png" height="128pt"/>
+</div>
+<h2>Humidity Axis: <span class="weight-300" id="humidity-label"></span></h2>
+<div class="axis">
+    <img id="img-dry" src="value_images/dry.png" height="128pt"/>
+    <div class="bar dry" id="bar-dry"><div class="text-wrapper" id="dry"></div></div>
+    <div class="bar moist" id="bar-moist"><div class="text-wrapper" id="moist"></div></div>
+    <img id="img-moist" src="value_images/moist.png" height="128pt"/>
+</div>
+<h2>You are: <span class="weight-300" id="animal-label"></span></h2>
+<br>
+<button class="button" onclick="location.href='index.html';" style="background-color: #1b9121;">Back</button> 
+<!-- Website visit statistics - no personal information is collected! -->
+<script type="text/javascript">
+var sc_project=11325211;
+var sc_invisible=1;
+var sc_security="fd9f0659";
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="web stats"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="//c.statcounter.com/11325211/0/fd9f0659/1/" alt="web
+stats"></a></div></noscript>
+<script>
+    function getQueryVariable(variable)
+    {
+           var query = window.location.search.substring(1)
+           var vars = query.split("&")
+           for (var i=0;i<vars.length;i++) {
+                   var pair = vars[i].split("=")
+                   if(pair[0] == variable) {return pair[1]}
+           }
+           return(NaN);
+    }
+
+    function setBarValue(name, value) {
+        innerel = document.getElementById(name)
+        outerel = document.getElementById("bar-" + name)
+        outerel.style.width = (value + "%")
+        innerel.innerHTML = (value + "%")
+        if (innerel.offsetWidth + 20 > outerel.offsetWidth) {
+            innerel.style.visibility = "hidden"
+        }
+    }
+
+    versArray = ["All-Purpose","Versatile","Generalized","Neutral","Specialized","Very Specialized","Very Limited"]
+    dietArray = ["Hypercarnivore","Mesocarnivore","Hypocarnivore","Omnivore","Vegetarian","Herbivore","Vegan"]
+    sociArray = ["Fanatic Tribal","Gregarious","Social","Ambiverted","Solitary","Independent","Isolational"]
+    tropArray = ["Apex Predator","Predator","Competitive","Mid-Tier","Casual","Prey","Victim"]
+	tempArray = ["Burning","Hot","Warm","Average","Chill","Cold","Freezing"]
+	humiArray = ["Absolutely Wet","Very Moist","Moist","Average","Dry","Very Dry","Dehydrated"]
+
+    function setLabel(val,ary) {
+        if (val > 100) { return "" } else
+        if (val > 90) { return ary[0] } else
+        if (val > 75) { return ary[1] } else
+        if (val > 60) { return ary[2] } else
+        if (val >= 40) { return ary[3] } else
+        if (val >= 25) { return ary[4] } else
+        if (val >= 10) { return ary[5] } else
+        if (val >= 0) { return ary[6] } else
+        	{return ""}
+    }
+
+    versatile   = getQueryVariable("v")
+    carnivore   = getQueryVariable("c")
+    social      = getQueryVariable("s")
+    predator    = getQueryVariable("p")
+	hot         = getQueryVariable("h")
+	moist       = getQueryVariable("m")
+    specialized = (100 - versatile).toFixed(1)
+    herbivore   = (100 - carnivore).toFixed(1)
+    solitary    = (100 - social   ).toFixed(1)
+    prey        = (100 - predator ).toFixed(1)
+	cold        = (100 - hot      ).toFixed(1)
+	dry         = (100 - moist    ).toFixed(1)
+
+    setBarValue("versatile", versatile)
+    setBarValue("specialized", specialized)
+    setBarValue("carnivore", carnivore)
+    setBarValue("herbivore", herbivore)
+    setBarValue("social", social)
+    setBarValue("solitary", solitary)
+    setBarValue("predator", predator)
+    setBarValue("prey", prey)
+	setBarValue("hot", hot)
+	setBarValue("cold", cold)
+	setBarValue("moist", moist)
+	setBarValue("dry", dry)
+
+    document.getElementById("versatility-label").innerHTML = setLabel(versatile, versArray)
+    document.getElementById("diet-label").innerHTML = setLabel(carnivore, dietArray)
+    document.getElementById("sociality-label").innerHTML = setLabel(social, sociArray)
+    document.getElementById("trophic-label").innerHTML = setLabel(predator, tropArray)
+	document.getElementById("temperature-label").innerHTML = setLabel(hot, tempArray)
+	document.getElementById("humidity-label").innerHTML = setLabel(moist, humiArray)
+
+    animal = ""
+    animdist = Infinity
+    for (var i = 0; i < animals.length; i++) {
+        dist = 0
+        dist += Math.pow(Math.abs(animals[i].stats.vers - versatile), 2)
+        dist += Math.pow(Math.abs(animals[i].stats.soci - social), 2)
+        dist += Math.pow(Math.abs(animals[i].stats.diet - carnivore), 2)
+        dist += Math.pow(Math.abs(animals[i].stats.trop - predator), 2)
+		dist += Math.pow(Math.abs(animals[i].stats.temp - hot), 2)
+		dist += Math.pow(Math.abs(animals[i].stats.humi - moist), 2)
+        if (dist < animdist) {
+            animal = animals[i].name
+            animdist = dist
+        }
+    }
+    document.getElementById("animal-label").innerHTML = animal
+    </script>
+</body>

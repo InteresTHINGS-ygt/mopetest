@@ -1,0 +1,233 @@
+html {
+    background-color: #7f7f7f;
+    padding: 0px;
+}
+body {
+    width: 80%;
+    min-height: calc(100vh - 4em);
+    margin: 0 auto;
+    padding: 2em;
+    background-color: #25cc30;
+    border-color: #1b9121;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-width: 20px;
+}
+p {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 16pt;
+    line-height: 1;
+    margin: 4pt;
+}
+p.value-description {
+    text-indent: -16pt;
+    margin-left: 20pt;
+}
+p.question {
+    margin: 16pt auto;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    font-weight: normal;
+    width: 70%;
+    min-width: 500pt;
+    min-height: 144pt;
+    background-color: #1b9121;
+    padding: 16pt;
+    border-radius: 16pt;
+    font-size: 36pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+h1 {
+    color: white;
+    font-family: 'Arial', sans-serif;
+    font-size: 72pt;
+	text-shadow: rgb(27, 145, 33) 6px 0px 0px, rgb(27, 145, 33) 5.91686px 0.995377px 0px, rgb(27, 145, 33) 5.66974px 1.96317px 0px, rgb(27, 145, 33) 5.2655px 2.87655px 0px, rgb(27, 145, 33) 4.71532px 3.71022px 0px, rgb(27, 145, 33) 4.03447px 4.44106px 0px, rgb(27, 145, 33) 3.24181px 5.04883px 0px, rgb(27, 145, 33) 2.35931px 5.51667px 0px, rgb(27, 145, 33) 1.41143px 5.83163px 0px, rgb(27, 145, 33) 0.424423px 5.98497px 0px, rgb(27, 145, 33) -0.574341px 5.97245px 0px, rgb(27, 145, 33) -1.55719px 5.79441px 0px, rgb(27, 145, 33) -2.49688px 5.45578px 0px, rgb(27, 145, 33) -3.36738px 4.96596px 0px, rgb(27, 145, 33) -4.14455px 4.33852px 0px, rgb(27, 145, 33) -4.80686px 3.59083px 0px, rgb(27, 145, 33) -5.33596px 2.74364px 0px, rgb(27, 145, 33) -5.71718px 1.8204px 0px, rgb(27, 145, 33) -5.93995px 0.84672px 0px, rgb(27, 145, 33) -5.99811px -0.150428px 0px, rgb(27, 145, 33) -5.89004px -1.14341px 0px, rgb(27, 145, 33) -5.61874px -2.1047px 0px, rgb(27, 145, 33) -5.19172px -3.00766px 0px, rgb(27, 145, 33) -4.62082px -3.82727px 0px, rgb(27, 145, 33) -3.92186px -4.54081px 0px, rgb(27, 145, 33) -3.11421px -5.12852px 0px, rgb(27, 145, 33) -2.22026px -5.57409px 0px, rgb(27, 145, 33) -1.26477px -5.86518px 0px, rgb(27, 145, 33) -0.274238px -5.99373px 0px, rgb(27, 145, 33) 0.723898px -5.95617px 0px, rgb(27, 145, 33) 1.70197px -5.75355px 0px, rgb(27, 145, 33) 2.63288px -5.39147px 0px, rgb(27, 145, 33) 3.49082px -4.87998px 0px, rgb(27, 145, 33) 4.25202px -4.23324px 0px, rgb(27, 145, 33) 4.89538px -3.46919px 0px, rgb(27, 145, 33) 5.40307px -2.60899px 0px, rgb(27, 145, 33) 5.76102px -1.67649px 0px, rgb(27, 145, 33) 5.95932px -0.697531px 0px;
+    text-align: center;
+    line-height: 72pt;
+    margin-top: 0pt;
+    margin-bottom: 0pt;
+}
+h2 {
+    color: white;
+    font-family: 'Arial', sans-serif;
+    font-size: 36pt;
+    line-height: 36pt;
+    margin-top: 12pt;
+    margin-bottom: 0pt;
+}
+li {
+    font-size: 16pt;
+    text-indent: 16pt;
+}
+a {
+    font-family: inherit;
+}
+img.center {
+    display: block;
+    margin: 1em auto;
+    width: 50%;
+    min-width: 500pt;
+}
+.button {
+    background-color: #1b9121;
+    font-family: 'Arial', sans-serif;
+    border: none;
+    border-radius: 8pt;
+    color: white;
+    padding: 8pt;
+    width: 50%;
+    min-width: 500pt;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 24pt;
+    margin: -2px auto;
+    cursor: pointer;
+}
+.small_button, .small_button_off {
+    background-color: #1b9121;
+    font-family: 'Arial', sans-serif;
+    border: none;
+    border-radius: 8pt;
+    color: white;
+    padding: 8pt;
+    width: 10%;
+    min-width: 100pt;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 18pt;
+    margin: -2px auto;
+    cursor: pointer;
+}
+.small_button_off {
+    background-color: #888;
+    color: #ddd;
+    cursor: not-allowed;
+    margin: -4px auto;
+}
+div.axis {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.bar {
+    height: 36pt;
+    line-height: 36pt;
+    padding: 8pt;
+    margin-top: 4pt;
+    margin-bottom: 4pt;
+    border-width: 4px;
+    border-right-width: 4px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: #1b9121;
+    background-color: #eeeeee;
+    display: block;
+    width: 50%;
+}
+div.text-wrapper {
+    font-family: 'Arial', sans-serif;
+    font-size: 36pt;
+    line-height: 36pt;
+    color: #ffffff;
+    display: inline-block;
+}
+div.versatile {
+    background-color: #6aff00;
+    text-align: left;
+	border-left-style: solid;
+    border-right-style: solid;
+}
+div.specialized {
+    background-color: #1100ff;
+    text-align: right;
+    border-left-style: solid;
+	border-right-style: solid;
+}
+div.social {
+    background-color: #ff0095;
+    text-align: left;
+	border-left-style: solid;
+    border-right-style: solid;
+}
+div.solitary {
+    background-color: #00fff2;
+    text-align: right;
+    border-left-style: solid;
+	border-right-style: solid;
+}
+div.carnivore {
+    background-color: #9e0000;
+    text-align: right;
+    border-left-style: solid;
+	border-right-style: solid;
+}
+div.herbivore {
+    background-color: #009e03;
+    text-align: left;
+	border-left-style: solid;
+    border-right-style: solid;
+}
+div.predator {
+    background-color: #ff8c00;
+    text-align: right;
+    border-left-style: solid;
+	border-right-style: solid;
+}
+div.prey {
+    background-color: #bf9d73;
+    text-align: left;
+	border-left-style: solid;
+    border-right-style: solid;
+}
+div.hot {
+    background-color: #ff3700;
+    text-align: right;
+    border-left-style: solid;
+	border-right-style: solid;
+}
+div.cold {
+    background-color: #95f0ee;
+    text-align: left;
+	border-left-style: solid;
+    border-right-style: solid;
+}
+div.moist {
+    background-color: #3aab8f;
+    text-align: right;
+    border-left-style: solid;
+	border-right-style: solid;
+}
+div.dry {
+    background-color: #c9c940;
+    text-align: left;
+	border-left-style: solid;
+	border-right-style: solid; 
+}
+span.weight-300 {
+    font-weight: 300;
+}
+#banner {
+    border-color: #1b9121;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 8pt;
+    display: block;
+    margin: 8pt;
+    margin-left: auto;
+    margin-right: auto;
+}
+p {
+	font-family: Arial, sans-serif;
+}
+a {
+	font-family: Arial, sans-serif;
+}
+
