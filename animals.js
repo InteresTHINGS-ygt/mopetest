@@ -616,7 +616,7 @@ animals = [
         }
     },
 	{
-        "name": "Eagle",
+        "name": "Bald Eagle",
         "stats": {
             "vers": 80,
             "diet": 90,
@@ -924,7 +924,7 @@ animals = [
         }
     },
 	{
-        "name": "Desrt Rat",
+        "name": "Desert Rat",
         "stats": {
             "vers": 10,
             "diet": 70,
@@ -1098,27 +1098,5 @@ animals = [
 			"temp": 10,
 			"humi": 20
         }
-    },
-	{
-        "name": "The Snowman",
-        "stats": {
-            "vers": 40,
-            "diet": 50,
-            "soci": 50,
-            "trop": 85,
-			"temp": 10,
-			"humi": 40
-        }
-    },
-	{
-        "name": "The BigFoot",
-        "stats": {
-            "vers": 80,
-            "diet": 50,
-            "soci": 100,
-            "trop": 85,
-			"temp": 80,
-			"humi": 80
-        }
-    },
+    }
 ];
