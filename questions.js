@@ -288,7 +288,7 @@ questions = [
         }
     },
     {
-        "question": "The hard mode gives me more in return than the easy mode.",
+        "question": "I like to go the hard path rather than the easy path.",
         "effect": {
             "vers": 0,
             "diet": 0,
@@ -297,7 +297,7 @@ questions = [
         }
     },
 	{
-        "question": "Life can be competitive and I must win.",
+        "question": "Life can be competitive and I try to take action.",
         "effect": {
             "vers": 0,
             "diet": 0,
@@ -315,7 +315,7 @@ questions = [
         }
     },
     {
-        "question": "I live my life as a victim.",
+        "question": "I don't mind settling for mediocrity.",
         "effect": {
             "vers": 0,
             "diet": 0,
@@ -333,7 +333,7 @@ questions = [
         }
     },
     {
-        "question": "I tend to rely on somebody else for my life.",
+        "question": "I am dependent on other people.",
         "effect": {
             "vers": 0,
             "diet": 0,
@@ -351,7 +351,7 @@ questions = [
         }
     },
 	{
-        "question": "I feel attacked by others.",
+        "question": "I am mostly inferior to others.",
         "effect": {
             "vers": 0,
             "diet": 0,
